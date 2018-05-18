@@ -1,20 +1,39 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    background-color: #DADFE0;
+    border: 1px solid #DADFE0;
+    /* border-radius: 15px; */
+    box-shadow: 0 8px 6px #AAADAD;
+    height: 5%;
+    width: 100%;
+}
+
 .bodyContainer {
     display: flex;
-    flex-direction: column;
     height: 100%;
+    padding-top: 10px;
 }
 
 .navPreview {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 20%;
+    width: 20%;
+    height: 100%;
     background-color: darkseagreen;
     /* border: 5px solid red; */
 }
 
 .thumbView {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     height: 100%;
     width: 50px;
     /* border: 5px dashed red; */
@@ -27,15 +46,17 @@ img {
 .mainPicture {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
     height: 100%;
+    width: 100%;
     background-color: beige;
     /* border: 5px solid blue; */
 }
 
 .largeImage {
-    display: block;
-    width: 25%;
-    height: 25%;
+    display: flex;
+    width: 75%;
+    height: 75%;
     /* border: 5px dashed blue; */
 }
